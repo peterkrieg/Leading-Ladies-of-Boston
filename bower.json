@@ -1,0 +1,25 @@
+{
+  "name": "llob",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Peter Krieg <pkrieg2@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/peterkrieg/Leading-Ladies-of-Boston",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "bourbon": "~4.2.6",
+    "reset-css": "~2.0.2011012602"
+  }
+}

@@ -1,0 +1,22 @@
+//________________Changing any bootstrap variables__________________________
+
+
+@import "../bower_components/bootstrap/sass/bootstrap";
+
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/reset-css/reset";
+
+
+//_______________General Styles to Whole Site________________
+html, body, [ui-view]{
+	height: 100%;
+	width: 100%;
+}
+
+
+div.container-wrapper{
+	width: 100%;
+	background: #eee;
+}
+
+
