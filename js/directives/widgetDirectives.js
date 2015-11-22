@@ -53,7 +53,7 @@ angular.module('myApp')
 			})
 
 
-			.addIndicators();
+			// .addIndicators();
 
 
 

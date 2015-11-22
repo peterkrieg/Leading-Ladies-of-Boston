@@ -77,8 +77,16 @@ nav.navbar{
 		margin-right: 30px;
 		font-family: $cursiveFont;
 		font-size: 1.1em;
-		padding-left: 20px;
 		padding-right: 20px;
+		padding-left: 20px;
+		@include phoneOrLess {
+			margin-right: 0;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		@include smallphone {
+			font-size: .9em;
+		}
 	}
 	ul.navbar-nav a{
 		font-family: $cursiveFont;
@@ -109,7 +117,7 @@ video{
 //____________Importing Components of Page_________
 @import "home";
 @import "about";
-// @import "contact";
+@import "contact";
 
 
 

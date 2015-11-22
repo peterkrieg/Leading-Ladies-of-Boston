@@ -1,6 +1,18 @@
 section.home{
 	height: 100%;
 	font-size: 2rem;
+	@include desktop {
+		font-size: 1.7rem;
+	}
+	@include tablet {
+		font-size: 1.5rem;
+	}
+	@include phone {
+		font-size: 1.3rem;
+	}
+	@include smallphone {
+		font-size: .8rem;
+	}
 
 	div.intro-container{
 		// margin-top: $navbar-height;
@@ -33,7 +45,6 @@ section.home{
 
 
 	div.button{
-		position: relative;
 		margin-top: 60px;
 		display: inline-block;
 		background: $purple;
@@ -46,21 +57,33 @@ section.home{
 			position: absolute;
 			display: inline-block;
 			margin-top: -32px;
-			left: 220px;
+			left: 203px;
+			@include desktop {
+				left: 175px;
+				margin-top: -27px;
+			}
+			@include tablet {
+				left: 155px;
+				margin-top: -24px;
+			}
+			@include phone {
+				left: 135px;
+				margin-top: -21px;
+			}
+			@include smallphone{
+				left: 120px;
+				margin-top: -20px;
+			}
 			color: white;
 			// display: none;
 		}
 		@include transition(.2s ease);
 		&:hover{
 			@include transition(.5 ease);
-			a.learn-more{
-				// color: white;
-			}
 			background: darken($purple, 10%);
 			padding-right: 50px;
 			i.ion-chevron-down{
 				opacity: 1;
-				margin-top: -32px;
 				@include transition(.5s ease);
 
 			}
@@ -69,9 +92,13 @@ section.home{
 	}
 
 	a.learn-more{
+		position: relative;
 		font-family: $cursiveFont;
 		margin-top: 50px;
 		color: black;
+		@include smallphone {
+			font-size: 1.5em;
+		}
 		&:hover, &:focus{
 			text-decoration: none;
 		}
