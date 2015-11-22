@@ -16,6 +16,7 @@ gulp.task('javascript', function() {
 	gulp.src([
 		'./bower_components/jquery/dist/jquery.js',
 		'./bower_components/typed.js/js/typed.js',
+		'./js/other/*.js',
 		// './bower_components/bootstrap4/js/src/bootstrap.js',
 
 
@@ -44,6 +45,7 @@ gulp.task('javascript', function() {
 
 
 		'./bower_components/angular/angular.js',
+		'./bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js',
 		'./bower_components/angular-ui-router/release/angular-ui-router.js',
 		'./js/app.js',
 		'./js/directives/*.js',
