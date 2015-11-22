@@ -15,9 +15,38 @@ watcher.on('change', function(event){
 gulp.task('javascript', function() {
 	gulp.src([
 		'./bower_components/jquery/dist/jquery.js',
+		'./bower_components/typed.js/js/typed.js',
+		// './bower_components/bootstrap4/js/src/bootstrap.js',
+
+
+		// loading each bootstrap JS component in right order
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
+		'./bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js',
+
+
+
+
+
+
+
+		// './bower_components/bootstrap-sass/assets/javascripts/bootstrap/*js',
+
+
+
 		'./bower_components/angular/angular.js',
 		'./bower_components/angular-ui-router/release/angular-ui-router.js',
 		'./js/app.js',
+		'./js/directives/*.js',
 		'./js/controllers/*.js'
 
 

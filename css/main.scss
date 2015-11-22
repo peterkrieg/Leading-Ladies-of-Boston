@@ -1,10 +1,30 @@
 //________________Changing any bootstrap variables__________________________
 
+$navbar-height: 60px;
 
-@import "../bower_components/bootstrap/sass/bootstrap";
+// tried experimenting with bootstrap 4.. not working
+// @import "../bower_components/bootstrap4/sass/bootstrap";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/reset-css/reset";
+
+//_________________________Google fonts__________________________
+
+@import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300);
+
+//_________________________Variables__________________________
+
+$cursiveFont: 'Petit Formal Script', cursive;
+$bodyFont: 'Open Sans', sans-serif;
+
+//_________________________Mixins__________________________
+
+@import "mixins/typeAnimation";
+@include typeAnimation();
+
+
 
 
 //_______________General Styles to Whole Site________________
@@ -13,10 +33,44 @@ html, body, [ui-view]{
 	width: 100%;
 }
 
+h1,h2,h3,h4,h5,h6{
+	font-family: $cursiveFont;
+}
+
+nav.navbar{
+	opacity: 0;
+	font-size: 1.5em;
+	font-family: $cursiveFont;
+	margin-bottom:0;
+	border-radius: 0px;
+	// @include border-bottom-radius(10);
+	ul.navbar-nav{
+		// font-family: $bodyFont;
+	}
+}
+
+html{
+	font-size: 16px;
+}
+
+
+
 
 div.container-wrapper{
 	width: 100%;
 	background: #eee;
 }
+
+
+video{
+	width: 100%;
+	// max-height: 800px;
+	// height: 100%;
+}
+
+
+//____________Importing Components of Page_________
+@import "home";
+
 
 

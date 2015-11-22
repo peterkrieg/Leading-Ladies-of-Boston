@@ -1,0 +1,83 @@
+section.home{
+	height: 100%;
+
+	div.intro-container{
+		font-size: 2rem;
+		// margin-top: $navbar-height;
+		height: 100%;
+		width: 100%;
+		background-color: #0C111E;
+		background-image: url('../img/bostonbg.jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		text-align: center;
+
+		// @include background(url('../img/bostonbg.jpg') center center cover no-repeat fixed);
+	}
+
+	h1{
+		padding-top: 20px;
+		color: white;
+		font-size: 2em;
+		font-family: $cursiveFont;
+	}
+
+	h2{
+		margin-top: 30px;
+		color: white;
+	}
+
+
+
+
+	img.logo{
+		width: 100px;
+		margin-top: 80px;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
