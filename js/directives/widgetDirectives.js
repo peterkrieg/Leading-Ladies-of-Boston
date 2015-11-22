@@ -14,3 +14,23 @@ angular.module('myApp')
 	}
 });
 
+// can't get this to work...
+// angular.module('myApp')
+// .directive('defaultScroll', function(smoothScroll){
+// 	return function(scope, elem, attrs){
+// 		$(function(){
+// 			var element = $elem[0];
+
+// 			var options={
+// 				duration: 100,
+// 				easing: 'easeOutQuad',
+// 				offset: 500
+// 			};
+
+// 			smoothScroll(element, options);
+
+
+// 		});
+// 	}
+// })
+
