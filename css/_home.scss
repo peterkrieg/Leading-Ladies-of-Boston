@@ -1,8 +1,8 @@
 section.home{
 	height: 100%;
+	font-size: 2rem;
 
 	div.intro-container{
-		font-size: 2rem;
 		// margin-top: $navbar-height;
 		height: 100%;
 		width: 100%;
@@ -53,6 +53,9 @@ section.home{
 		@include transition(.2s ease);
 		&:hover{
 			@include transition(.5 ease);
+			a.learn-more{
+				// color: white;
+			}
 			background: darken($purple, 10%);
 			padding-right: 50px;
 			i.ion-chevron-down{
@@ -81,6 +84,14 @@ section.home{
 		width: 100px;
 		margin-top: 80px;
 
+	}
+
+	div.navbar-trigger{
+		position: absolute;
+		bottom: 200px;
+		background: red;
+		height: 5px;
+		width: 100%;
 	}
 
 

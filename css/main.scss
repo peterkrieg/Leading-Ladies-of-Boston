@@ -40,6 +40,11 @@ html, body, [ui-view]{
 	font-family: $bodyFont;
 }
 
+// by default, center everything 
+body{
+	text-align: center;
+}
+
 h1,h2,h3,h4,h5,h6{
 	font-family: $cursiveFont;
 }
@@ -48,14 +53,22 @@ a,div,button,section{
 	font-family: $bodyFont;
 }
 
+// custom angular directive element navbar
+// have to do scroll magic on navbar, not the stuff directive
+// puts inside. not sure why, but I think scroll magic cant find
+// the stuff inside
+navbar{
+	opacity: 0;
+}
+
 
 
 nav.navbar{
-	opacity: 0;
 	font-size: 1.5em;
 	font-family: $cursiveFont;
 	margin-bottom:0;
 	border-radius: 0px;
+	// position: fi
 	// @include border-bottom-radius(10);
 	ul.navbar-nav{
 		// font-family: $bodyFont;
@@ -89,6 +102,15 @@ video{
 
 
 
+// testing purpose 
+// div.redbox{
+// 	position: absolute;
+// 	left: 500px;
+// 	top: 200px;
+// 	height: 100px;
+// 	width: 100px;
+// 	background: red;
+// }
 
 
 

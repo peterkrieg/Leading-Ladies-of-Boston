@@ -16,7 +16,19 @@ gulp.task('javascript', function() {
 	gulp.src([
 		'./bower_components/jquery/dist/jquery.js',
 		'./bower_components/typed.js/js/typed.js',
-		'./js/other/*.js',
+
+
+
+		
+
+
+
+
+
+
+
+
+
 		// './bower_components/bootstrap4/js/src/bootstrap.js',
 
 
@@ -47,6 +59,28 @@ gulp.task('javascript', function() {
 		'./bower_components/angular/angular.js',
 		'./bower_components/ngSmoothScroll/lib/angular-smooth-scroll.js',
 		'./bower_components/angular-ui-router/release/angular-ui-router.js',
+
+
+
+
+
+
+
+		//_________________________GSAP animation__________________________
+
+		'./bower_components/gsap/src/uncompressed/TweenMax.js',
+
+		//_________________________Scroll magic__________________________
+		'./bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+		'./bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
+		'./bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
+		'./js/other/*.js',
+
+
+
+
+
+		//_______My controllers, directives, app.js__________________________
 		'./js/app.js',
 		'./js/directives/*.js',
 		'./js/controllers/*.js'

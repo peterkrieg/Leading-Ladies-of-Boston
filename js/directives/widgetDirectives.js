@@ -34,3 +34,34 @@ angular.module('myApp')
 // 	}
 // })
 
+
+angular.module('myApp')
+.directive('animateNav', function(){
+	return function(scope, elem, attrs){
+		$(function(){
+			var controller = new ScrollMagic.Controller();
+
+			var fadeInNavbar = new ScrollMagic.Scene({
+				triggerElement: '.navbar-trigger',
+				duration: 350
+			})
+
+			.setTween('navbar', .5, {
+				scale: 1.5,
+				rotation: 180,
+				opacity: 1
+			})
+
+
+			.addIndicators();
+
+
+
+			controller.addScene([
+				fadeInNavbar
+				]);
+
+		});
+	}
+})
+

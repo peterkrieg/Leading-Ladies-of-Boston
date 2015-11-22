@@ -24,6 +24,7 @@
     "bootstrap-sass": "~3.3.5",
     "typed.js": "~1.1.1",
     "Ionicons": "ionicons#~2.0.1",
-    "ngSmoothScroll": "~2.0.0"
+    "ngSmoothScroll": "~2.0.0",
+    "gsap": "~1.18.0"
   }
 }
