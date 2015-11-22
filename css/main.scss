@@ -29,7 +29,7 @@ $purple: #BE90D4;
 
 //_________________________Mixins__________________________
 
-@import "mixins/typeAnimation";
+@import "mixins/widgetMixins";
 @include typeAnimation();
 
 
@@ -80,8 +80,8 @@ nav.navbar{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	ul.navbar-nav{
-		// font-family: $bodyFont;
+	ul.navbar-nav a{
+		font-family: $cursiveFont;
 	}
 
 }
