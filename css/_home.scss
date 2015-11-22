@@ -25,6 +25,53 @@ section.home{
 	h2{
 		margin-top: 30px;
 		color: white;
+		span.typed-cursor{
+			position: relative;
+			right: 8px;
+		}
+	}
+
+
+	div.button{
+		position: relative;
+		margin-top: 60px;
+		display: inline-block;
+		background: $purple;
+		padding: 7px 20px;
+		border-radius: 10px;
+		i.ion-chevron-down{
+			opacity: 0;
+			@include transition(.2s ease);
+			margin-left: 10px;
+			position: absolute;
+			display: inline-block;
+			margin-top: -32px;
+			left: 220px;
+			color: white;
+			// display: none;
+		}
+		@include transition(.2s ease);
+		&:hover{
+			@include transition(.5 ease);
+			background: darken($purple, 10%);
+			padding-right: 50px;
+			i.ion-chevron-down{
+				opacity: 1;
+				margin-top: -32px;
+				@include transition(.5s ease);
+
+			}
+		}
+
+	}
+
+	a.learn-more{
+		font-family: $cursiveFont;
+		margin-top: 50px;
+		color: black;
+		&:hover, &:focus{
+			text-decoration: none;
+		}
 	}
 
 

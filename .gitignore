@@ -3,6 +3,11 @@ node_modules/
 *.css
 *.css.map
 bower_components/
+
 scripts/
+scripts/all.js
+
+*.min.js
 
 *.mp4
+*.scss

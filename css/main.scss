@@ -9,6 +9,8 @@ $navbar-height: 60px;
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/reset-css/reset";
 
+@import "../bower_components/ionicons/css/ionicons.css";
+
 //_________________________Google fonts__________________________
 
 @import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script);
@@ -18,6 +20,10 @@ $navbar-height: 60px;
 
 $cursiveFont: 'Petit Formal Script', cursive;
 $bodyFont: 'Open Sans', sans-serif;
+
+$pink: #F1A9A0;
+
+$purple: #BE90D4;
 
 //_________________________Mixins__________________________
 
@@ -31,11 +37,18 @@ $bodyFont: 'Open Sans', sans-serif;
 html, body, [ui-view]{
 	height: 100%;
 	width: 100%;
+	font-family: $bodyFont;
 }
 
 h1,h2,h3,h4,h5,h6{
 	font-family: $cursiveFont;
 }
+
+a,div,button,section{
+	font-family: $bodyFont;
+}
+
+
 
 nav.navbar{
 	opacity: 0;
