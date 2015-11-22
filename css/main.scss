@@ -9,10 +9,12 @@ $navbar-height: 60px;
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/reset-css/reset";
 
-@import "../bower_components/ionicons/css/ionicons.css";
+// @import "../bower_components/ionicons/css/ionicons.css";
 
 //_________________________Google fonts__________________________
 
+
+// eventually should switch these to load in index.html
 @import url(https://fonts.googleapis.com/css?family=Petit+Formal+Script);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300);
 
@@ -42,6 +44,7 @@ html, body, [ui-view]{
 
 // by default, center everything 
 body{
+	background: #eee;
 	text-align: center;
 }
 
@@ -70,9 +73,17 @@ nav.navbar{
 	border-radius: 0px;
 	// position: fi
 	// @include border-bottom-radius(10);
+	a.navbar-brand{
+		margin-right: 30px;
+		font-family: $cursiveFont;
+		font-size: 1.1em;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 	ul.navbar-nav{
 		// font-family: $bodyFont;
 	}
+
 }
 
 html{

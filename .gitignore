@@ -7,6 +7,9 @@ bower_components/
 scripts/
 scripts/all.js
 
+photoshop/
+
+
 *.min.js
 
 *.mp4
